@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mulish&display=swap');
+
+body {
+    background-image: url(./images/colorful-2174045__340.webp);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.start {
+    cursor: pointer;
+    color: #af986c;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.play {
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+.round {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgb(226, 233, 133);
+    border-radius: 25%;
+    color: darkmagenta;
+}
+
+span {
+    padding: 10px;
+}
+
+.stop {
+    display: flex;
+    justify-content: center;
+}
+
+.again, .hold {
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #af986c;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.rules {
+    cursor: pointer;
+    font-size: 15px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(204, 68, 186);
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.modal-content {
+    overflow: auto;
+    width: 600px;
+    height: 240px;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    padding: 20px;
+    font-size: 14px;
+    background-color: wheat;
+    border-radius: 5px;
+}
+
+.modal-close {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    }
+
+.tooltip-text {
+    width: 200PX;
+}

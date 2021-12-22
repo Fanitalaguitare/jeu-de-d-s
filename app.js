@@ -27,34 +27,35 @@ let dernier = 0;
 let nombreAleatoire = 0;
 
 //tableau des images
-let images = [
-    [img  = "./images/image1.png"],
-    [img  = './images/image2.png'],
-    [img  = './images/image3.png'],
-    [img  = './images/image4.png'],
-    [img  = './images/image5.png'],
-    [img  = './images/image6.png']
-];
+// let images = {
+//     img  = "./images/image1.png",
+//     img  = './images/image2.png',
+//     img  = './images/image3.png',
+//     img  = './images/image4.png',
+//     img  = './images/image5.png',
+//     img  = './images/image6.png'
+// };
+const min=1; 
+const max=6;  
+const random = Math.floor(Math.random() * (max - min)) + min; 
 
-function genererNombreEntier(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
+// function genererNombreEntier(max) {
+//     return Math.floor(Math.random() * Math.floor(6));
+// // }
 
 //bouton nouveau jeu
 start.addEventListener('click', () => {
     round.textContent ="0";
 });
-
+function again() {
 lancer.addEventListener('click', () => {
-   do {
-    nombreAleatoire = genererNombreEntier(images.length);
-   } while (nombreAleatoire == dernier);
-   img.textContent = images[nombreAleatoire][0];
-});
-
-$(function() {
-    $('#p1').tooltip();
-});
+    round.textContent = random;
+})
+};
+again();
+// $(function() {
+//     $('#p1').tooltip();
+// });
 
 
 
@@ -64,6 +65,3 @@ $(function() {
 
 
 //let new = document.getElementsByClassName('title');
-
-
-

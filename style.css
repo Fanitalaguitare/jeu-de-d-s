@@ -37,6 +37,7 @@ header {
 .play {
     height: 400px;
     margin-top: 50px;
+    padding: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,15 +52,20 @@ img {
 .play img {
     border-radius: 10px;
 }
+.dice img {
+    visibility: hidden;
+}
 .round {
-    height: 100px;
+    width: 300px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px;
     background-color: rgb(226, 233, 133);
     border-radius: 25%;
-    color: darkmagenta;
+    color: #af986c;
+    background: rgb(32, 32, 32);
 }
 
 span {
